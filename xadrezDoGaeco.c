@@ -6017,7 +6017,7 @@ int jogadaBancada(){
     int linhaDestino =0;
     int  colunaDestino =0;
 
-printf("============== Caso o Jogador seja Leo, sua derrota iniciará uma investigação do GAECO =================================\n");
+printf("============== Caso o Jogador seja Leo, sua derrota iniciara uma investigacao do GAECO =================================\n");
 
     if( brancas == 1 && pretas == 0 ){ // BRANCAS � VERDADEIRA OU SEJA � 1???? SE SIM, PODE JOGAR ! E S�O, ELA E FAL�A E PRETA PODE JOGAR , OU SEJA OU UMA OU A OUTRA
     printf("POR FAVOR PECA BRANCA FACA A SUA JOGADA !\n");
