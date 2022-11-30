@@ -22,6 +22,7 @@ int mostrarMatriz(){
   int linha;
   int coluna;
   int x;
+  printf("============================================= GAECO ==========================================================\n");
   for(linha = 0; linha<9;linha++){ // 0 1 2 3 4 5 6 7
         for(x=0;x<3;x++){ // 0 1 2 para cada loop o  mais interno executa 8 vezes
 
@@ -210,7 +211,7 @@ int moverpeca(int LO ,int CO, int lD,int cD,int valor){ // A CADA CHAMADA AS VAR
 
 
                            }else{
-                               printf("N�o � possivel saltar sobre as pe�as"); // NESTE CASO cont1 CONTOU UMA PE�A ENTRE A TORRE E SEU DESTINO
+                               printf("Nao eh possivel saltar sobre as pecas"); // NESTE CASO cont1 CONTOU UMA PE�A ENTRE A TORRE E SEU DESTINO
                                                                                 // N�O PODE MOVER  POIS A TORRE N�O SALTA SOBRE PE�AS
                            }
 
@@ -547,7 +548,7 @@ int moverpeca(int LO ,int CO, int lD,int cD,int valor){ // A CADA CHAMADA AS VAR
 
 
                            }else{
-                               printf("N�o � possivel saltar sobre as pe�as");
+                               printf("Nao eh possivel saltar sobre as pecas");
                            }
 
                    }
@@ -593,7 +594,7 @@ int moverpeca(int LO ,int CO, int lD,int cD,int valor){ // A CADA CHAMADA AS VAR
                      }
 
                            }else{
-                               printf("N�o � possivel saltar sobre as pe�as\n");
+                               printf("Nao eh possivel saltar sobre as pecas\n");
                            }
 
                    }
@@ -6015,6 +6016,8 @@ int jogadaBancada(){
     int  colunaOrigem =0;
     int linhaDestino =0;
     int  colunaDestino =0;
+
+printf("============== Caso o Jogador seja Leo, sua derrota iniciará uma investigação do GAECO =================================\n");
 
     if( brancas == 1 && pretas == 0 ){ // BRANCAS � VERDADEIRA OU SEJA � 1???? SE SIM, PODE JOGAR ! E S�O, ELA E FAL�A E PRETA PODE JOGAR , OU SEJA OU UMA OU A OUTRA
     printf("POR FAVOR PECA BRANCA FACA A SUA JOGADA !\n");
