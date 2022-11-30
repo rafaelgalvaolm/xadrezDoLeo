@@ -55,8 +55,7 @@ int moverpeca(int LO ,int CO, int lD,int cD,int valor){ // A CADA CHAMADA AS VAR
       //printf("\n\n%d\n\n",deslocamentoVertical);
       //O DESLOCAMENTO HORIZONTAL SER�  A SUBTR��O DA COLUNA DE DESTINO MENOS A COLUNA DE ORIGEM EXEMPLO (4 - 2 == 2 CASAS)
     int deslocamentoHorizontal = abs(cD - CO);
-      //printf("%d %d %d %d ",LO,CO,lD,cD);
-//printf("====TTTTTT%dTTTTTT=====",valor);
+
       if( ((LO >=1 && LO <=8) && (CO >=1 && CO <=8)) && (lD >=1 && lD <=8) && (cD >=1 && cD <=8)){// S� SER�O ACEITOS OS VALORES ENTRE 1 E 8 TANTO PARA O DESTINO QUANTO PARA A ORIGEM
           // J� QUE O TABULEIRO ONDE AS PE�AS IR�O SE MOVER E UMA MATRIZ QUE VARIA  ENTRE 1 E 8  SENDO [8]POR [8]
              peca = xadrez[LO][CO];
@@ -72,8 +71,8 @@ int moverpeca(int LO ,int CO, int lD,int cD,int valor){ // A CADA CHAMADA AS VAR
                  && (deslocamentoVertical == 0 || deslocamentoHorizontal == 0)){ // SE  O DESTINO FOR  VAZIO OU ENT�O UM CARACTER MIN�SCULO ENT�O PODE SOBRE ESCREVER !!
                      // NESTE CASO  A ORIGEM VAI PARA O LOCAL DE DESTINO E O DESTINO RECEBE == ' '  VAZIO
                      /*
-                      1 SE O DESCOLACAMENTOVERTICAL FOR == 0 SIGNIFICA QUE A TORRE  SE MOVEU TODO NA HORIZONTAL E  N�O SE DESLOCOU  NA VERTICAL !    EXEMPLO { deslocamentoVertical == 0
-                      2 POR�M o deslocamentoHorizontal == 8 foi oito,
+                      1 SE O DESCOLACAMENTOVERTICAL FOR == 0 SIGNIFICA QUE A TORRE  SE MOVEU TODO NA HORIZONTAL E  N�O SE DESLOCOU  NA VERTICAL ! 
+                      2 quando o deslocamentoHorizontal == 8 foi oito,
                       3 O MESMO VALE PARA O deslocamentoHorizontal SE ELE FOR == 0 ENT�O O MOVIMENTO SERA  NA VERTICAL.
                       4 OU UM OU OUTRO  NUNCA OS DOIS
                      */
@@ -87,8 +86,8 @@ int moverpeca(int LO ,int CO, int lD,int cD,int valor){ // A CADA CHAMADA AS VAR
 
 
 
-                            if(CO == 1){ // SE A COLUNA FOR IGUAL A 1
-                                    int f = LO; // f RECEBE a linha de origem
+                            if(CO == 1){ 
+                                    int f = LO; 
                                 if(LO - lD == 1 || lD - LO  == 1){ //  A solu��o para andar um casa, se alinha de origem menos a linha destino for == 1 ou  linha destino menos origem for == 1 ENT�O entra na cond��o
 // obs LINHA ORGEM == ONDE EST�
 // LINHA DESTINO PARA ONDE  VAI
@@ -1627,8 +1626,7 @@ int moverpeca(int LO ,int CO, int lD,int cD,int valor){ // A CADA CHAMADA AS VAR
 
                                  for( i =0; i < 1;i++){ // ESSE lOOP CORRE SOMENTE UMA VEZ PARA CONTAR O contX lembrando que o contX e global
                              if(xadrez[LO][CO] == 'T' && xadrez [lD][cD] == 'k'){
-                              contX1 = contX1 + 1 ; // contado global
-                               //printf("=========yyyyy%d========",contX1);
+                              contX1 = contX1 + 1 ; 
                             if(xadrez[LO][CO] == 'T' && xadrez [lD][cD] == 'k' && contX1 == 1){
 
                                    return 4; // XEQUE
