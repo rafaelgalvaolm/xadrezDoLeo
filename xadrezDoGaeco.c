@@ -24,7 +24,7 @@ int mostrarMatriz(){
   int x;
   printf("============================================= GAECO ==========================================================\n");
   for(linha = 0; linha<9;linha++){ // 0 1 2 3 4 5 6 7
-        for(x=0;x<3;x++){ // 0 1 2 para cada loop o  mais interno executa 8 vezes
+        for(x=0;x<3;x++){ 
 
             for(coluna = 0; coluna<9;coluna++){
                 char peca = xadrez[linha][coluna]; // pe�a recebe o que est� dentro das respectivas posi�oes da matrix xadrex
